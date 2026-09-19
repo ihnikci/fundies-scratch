@@ -45,3 +45,20 @@ below(rectangle(40, 20, "solid", "orange"), circle(30, "solid", "blue"))
 
 #beside((first image), (second image))
 beside(circle(30, "solid", "blue"), circle(30, "solid", "green"))
+
+rectangle(100, 20, "solid", "purple")
+#rotate :: (angle :: Number,img :: Image)
+rotate(180, rectangle(100,20, "solid", "purple"))
+rotate(90, rectangle(20, 100, "solid", "purple"))
+
+#regular-polygon(size, #of sides, "outline/solid" "color"))
+regular-polygon(40, 8, "solid", "cornflower-blue")
+
+#now add text to it
+text("STOP", 30, "white")
+
+#overlay
+overlay(text("STOP", 30, "white"), regular-polygon(40, 8, "solid", "cornflower-blue"))
+
+#make it red
+overlay(text("STOP", 30, "white"), regular-polygon(40, 8, "solid", "red"))
